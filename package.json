@@ -1,0 +1,14 @@
+{
+  "name": "device-flow-cli",
+  "module": "index.mjs",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@octokit/auth-oauth-device": "^7.0.1"
+  }
+}
