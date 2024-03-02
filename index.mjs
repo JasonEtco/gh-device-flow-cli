@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { createOAuthDeviceAuth } from "@octokit/auth-oauth-device";
 import chalk from "chalk";
 

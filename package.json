@@ -1,5 +1,6 @@
 {
   "name": "gh-device-flow-cli",
+  "version": "1.0.1",
   "bin": "./index.mjs",
   "module": "index.mjs",
   "type": "module",
