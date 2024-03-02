@@ -1,4 +1,5 @@
 import { createOAuthDeviceAuth } from "@octokit/auth-oauth-device";
+import chalk from "chalk";
 
 // USAGE:
 // node index.mjs <client_id>
@@ -16,8 +17,8 @@ async function main() {
     clientType: "github-app",
     clientId: clientID,
     onVerification(verification) {
-      console.log("Open %s", verification.verification_uri);
-      console.log("Enter code: %s", verification.user_code);
+      console.log("Open URL:   %s", chalk.bold(verification.verification_uri));
+      console.log("Enter code: %s", chalk.cyan(chalk.bold(verification.user_code)));
     },
   });
   
